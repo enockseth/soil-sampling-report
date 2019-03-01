@@ -2,4 +2,4 @@ unused_images/
 *.log
 *.out
 *.aux
-
+*.synctex.gz
