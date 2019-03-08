@@ -2,7 +2,20 @@
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 \usepackage{wrapfig}
-%\usepackage{fontspec}
+
+\usepackage{fontspec}
+\setmainfont{Exo 2}[%
+    Path            =   fonts/,
+    Extension       =   .otf,
+    UprightFont     =   *-Regular,
+    ItalicFont      =   *-Italic,
+    BoldFont        =   *-Bold,
+    BoldItalicFont  =   *-BoldItalic,
+    FontFace        =   {black}{n}{*-Black},
+    FontFace        =   {black}{it}{*-BlackItalic},
+]
+
+
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 
@@ -20,12 +33,27 @@
 
 \title{A Soil Sediment Profile for Dar es Salaam}
 \author{Ramani Huria}
-\date{\today}
+\usepackage[nodayofweek,level]{datetime}
+\newdate{date}{28}{02}{2019}
+\date{\displaydate{date}}
+
+\newcommand*{\vcenteredhbox}[1]{\begingroup
+\setbox0=\hbox{#1}\parbox{\wd0}{\box0}\endgroup}
 
 \begin{document}
 \vbox{
   \centering
-  \includegraphics[width=3cm]{HOT_logo_with_text.png}
+  Prepared for:
+  \vcenteredhbox{\includegraphics[width=2cm]{UK-aid_logo.png}}
+  and  
+  \vcenteredhbox{\includegraphics[width=5cm]{World_Bank_Group_logo.png}}
+  \
+  \
+
+  
+
+  by:
+  \vcenteredhbox{\includegraphics[width=3cm]{HOT_logo_with_text.png}}
   \maketitle
 }
 
@@ -66,7 +94,7 @@ The team used a Kobo Toolbox instance as the back end (server) for the data coll
 \newpage
 \subsubsection{Materials}
 Each field sampling team of two people carried the following equipemnt:
-\begin{wrapfigure}{r}{0.25\textwidth} %this figure will be at the right
+\begin{wrapfigure}{r}{0.25\textwidth}
   \centering
   \includegraphics[width=0.25\textwidth]{trowels.png}
 \end{wrapfigure}
@@ -153,7 +181,7 @@ The team sampled 643 sites, top and bottom (1286 soil samples in total). The pri
 This data is primarily intended for use with erosion modeling. For users not equipped with erosion modeling skills and toolkits, and for sharing the results with the public, a visual map has been prepared that gives a good first impression of the characteristics of the soil.
 
 \begin{figure}[h]
-  \caption{The bars of the histogram---upper for the top samples and lower for the bottom samples---represent the proportion of soil of each particle size.}
+  \caption{The bars of the histogram---upper for the top samples and lower for the bottom samples---represent the proportion of each particle size.}
   \centering
   \includegraphics[width=1.1\textwidth]{soil_map_detail_peninsula_with_legend}
 \end{figure}
