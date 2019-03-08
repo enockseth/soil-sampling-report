@@ -31,8 +31,8 @@
 }
 %\urlstyle{same}
 
-\title{A Soil Sediment Profile for Dar es Salaam}
-\author{Ramani Huria}
+\title{A Surface Soil Sediment Profile for Dar es Salaam, Tanzania}
+\author{Humanitarian OpenStreetMap Team and JBA Consulting}
 \usepackage[nodayofweek,level]{datetime}
 \newdate{date}{28}{02}{2019}
 \date{\displaydate{date}}
@@ -46,26 +46,32 @@
   Prepared for:
   \vcenteredhbox{\includegraphics[width=2cm]{UK-aid_logo.png}}
   and  
-  \vcenteredhbox{\includegraphics[width=5cm]{World_Bank_Group_logo.png}}
+  \vcenteredhbox{\includegraphics[width=6cm]{World_Bank_Group_logo.png}}
   \
   \
 
   
 
   by:
-  \vcenteredhbox{\includegraphics[width=3cm]{HOT_logo_with_text.png}}
+  \vcenteredhbox{\includegraphics[width=4cm]{HOT_logo_with_text.png}}
+  and
+  \vcenteredhbox{\includegraphics[width=2cm]{JBA_logo.png}}
   \maketitle
 }
 
+\newpage
 \section{Executive Summary}
 \label{executivesummary}
-With the support of the World Bank in Tanzania, Ramani Huria (RH) and Jeremy Benn and Associates Consulting (JBA) partnered in October 2018 to develop a surface soil dataset for the greater Dar es Salaam region of Tanzania.  This was intended to support a geomorphological assessment taking into account soil characteristics for erosion and flood risk studies. 
+With the support of the World Bank in Tanzania, Ramani Huria (RH) and JBA Consulting partnered in October 2018 to develop a surface soil sediment dataset for the greater Dar es Salaam region of Tanzania.  This was intended to support a geomorphological assessment taking into account soil sediment characteristics for erosion and flood risk studies. 
 
 A national-level soil profile had existed for Tanzania prior to this effort, but contained only a single sample from Dar es Salaam. This was not sufficient to analyse erosion potential across the city. The JBA team in consultation with Ramani Huria decided to use a 2km grid, which resulted in 731 sampling points being pre-established throughout the city.
 
-A team of 10 field mappers and 4 office technicians---all Tanzanian youth participants in the Ramani Huria project---were trained in sample collection and analysis (sieving) respectively by JBA geomorphologist Matthew Hemsworth. A total of 643 points were sampled and sieved; 88 sites were inaccessible for one or another reason.
+A team of 10 field mappers and 4 office technicians---all Tanzanian youth participants in the Ramani Huria project---were trained in sample collection and analysis (sieving). A total of 643 points were sampled and sieved; 88 sites were inaccessible for one or another reason.
 
-The 643 samples were analyzed by sieving each to separate the soil by particle size and weighing the resulting fractions. The resulting dataset, a geo-referenced set of soil profiles, is being published as open data.
+\includegraphics[width=0.8\textwidth]{sample_locations.jpg}
+
+The 643 samples were analyzed by sieving each to separate the sediment by particle size and weighing the resulting fractions. The resulting dataset, a geo-referenced set of soil sediment profiles, is published and available as open data.
+
 
 \newpage
 \section{Methodology}
@@ -73,7 +79,7 @@ The 643 samples were analyzed by sieving each to separate the soil by particle s
 
 \subsection{Field Sample Collection}
 \label{fieldsamplecollection}
-Two samples of 0.5kg of soil were collected in the field at---or if inaccessible, within 500m of---each of the pre-established sites. One sample was collected near the surface (after discarding 3cm of overlay, and the other at a depth between 7 and 15cm.
+Two samples of 0.5kg of sediment were collected in the field at---or if inaccessible, within 500m of---each of the pre-established sites. One sample was collected near the surface (after discarding 3cm of overlay), and the other at a depth between 7 and 15cm.
 
 A set of data was recorded at each site using OpenDataKit's Android application ODK Collect. The team developed a form specific to this exercise. It included:
 \begin{itemize}
@@ -101,7 +107,7 @@ Each field sampling team of two people carried the following equipemnt:
 
 \begin{itemize}
   \item Trowel or small shovel
-  \item Plastic ``ziploc'' bags with ~1kg soil capacity
+  \item Plastic ``ziploc'' bags with ~1kg capacity
   \item Android phone pre-loaded with ODK Collect
   \item A separate maps and navigation application, maps.me, pre-loaded with the locations to be visited (the 2km grid)
   \item First aid kit
@@ -136,7 +142,7 @@ approximately to the sample point location, however it does not need to be exact
 
 \subsection{Laboratory Analysis}
 
-The pair of samples---top and bottom---from each site was passed through a set of progressively finer-meshed sieves, resulting in nine separate fractions. Each fraction was weighed. The resulting measurements, which represent the proportion of each soil particle size at each site, were recorded.
+The pair of samples---top and bottom---from each site was passed through a set of progressively finer-meshed sieves, resulting in nine separate fractions. Each fraction was weighed. The resulting measurements, which represent the proportion of each sediment particle size at each site, were recorded.
 
 \subsubsection{Materials}
 %\begin{wrapfigure}{r}{0.2\textwidth}
@@ -156,29 +162,29 @@ The following materials were used:
 \includegraphics[ width=\textwidth]{DSC05570_cropped.jpg}
 
 \subsubsection{Sieving and Data Entry}
-The following procedure, specified by JBA, was used for the seiving.
+The following procedure was used for the seiving:
 
 \begin{enumerate}
   \item If samples are moist, they should be dried before analysis by being placed in the sun---though not exposed to wind---in a clean dry dish. 
   \item The following steps should be performed for both samples, beginning with the TOP sample.
   \item Weigh about 500g of sediment from the bag into a weighing dish.
-  \item If soil particles are lumped or conglomerated, crush the lumped particles until they become loose.
+  \item If sediment particles are lumped or conglomerated, crush the lumped particles until they become loose.
   \item Determine the mass (weight in grams) of each sample before sieving.
-  \item Prepare a stack of sieves. Those with larger opening sizes are placed above the ones with smaller opening sizes. The lowest on the stack is a simple pan which retains the soil that passes through the finest sieve.
-  \item Make sure all sieves are clean---if any soil particles are stuck in the openings poke them out using the brush.
+  \item Prepare a stack of sieves. Those with larger opening sizes are placed above the ones with smaller opening sizes. The lowest on the stack is a simple pan which retains the sediment that passes through the finest sieve.
+  \item Make sure all sieves are clean---if any particles are stuck in the openings poke them out using the brush.
   \item Weigh all empty sieves and the pan separately. Record the results in ODK Collect.
   \item Pour the sediment into the stack of sieves from the top and place the cover on top. Shake the sieves carefully so the sediment filters through---this may need to be done for 3 to 5 minutes.
-  \item Stop shaking and measure the mass of each sieve + retained soil. Record the results in ODK Collect.
+  \item Stop shaking and measure the mass of each sieve + retained sediment. Record the results in ODK Collect.
 \end{enumerate}
 
-Initially a Google Sheets spreadsheet was created to store the results. Each site (set of two samples) had a single tab on the spreadsheet, with the tab named for the site ID number. The sievers would use the $move or copy sheet$ function in Google Sheets to create a new tab, rename that tab to the sample ID, and fill in the data. Calculations and checks were automatic. However, the RH team did not do well with this (see discussion in the \hyperlink{lessonslearned}{lessons learned} section). Therefore an ODK form was created to record the results, which eventually made for a more effective process. 
+Initially a Google Sheets spreadsheet was created to store the results. Each site (set of two samples) had a single tab on the spreadsheet, with the tab named for the site ID number. The sievers would use the move or copy sheet function in Google Sheets to create a new tab, rename that tab to the sample ID, and fill in the data. Calculations and checks were automatic. However, the RH team did not do well with this (see discussion in the \hyperlink{lessonslearned}{lessons learned} section). Therefore an ODK form was created to record the results, which eventually made for a more effective process. 
 
 \newpage 
 \section{Results and Analysis}
 \label{resultsandanalysis}
-The team sampled 643 sites, top and bottom (1286 soil samples in total). The primary result is a table of masses representing the proportion of soil.
+The team sampled 643 sites, top and bottom (1286 soil sediment samples in total). The primary result is a table of masses representing the proportion of each size of sediment.
 
-This data is primarily intended for use with erosion modeling. For users not equipped with erosion modeling skills and toolkits, and for sharing the results with the public, a visual map has been prepared that gives a good first impression of the characteristics of the soil.
+This data is primarily intended for use with erosion modeling. For users not equipped with erosion modeling skills and toolkits, and for sharing the results with the public, a visual map has been prepared that gives a good first impression of the characteristics.
 
 \begin{figure}[h]
   \caption{The bars of the histogram---upper for the top samples and lower for the bottom samples---represent the proportion of each particle size.}
@@ -204,7 +210,7 @@ The project generated a number of learning points that will be valuable for our 
 A common challenge in this type of activity is seeking permission for doing what may be suspicious-looking activities (running around random areas of a major city with a shovel, for example). As the team put a fair bit of time and effort into this, no significant issues were encountered. However, it's important to budget time for this---it took several weeks to obtain permissions for all of the areas of Dar es Salaam that we visited, and this required staff time, transportation, etc.
 
 \subsubsection{Inconsistent offset procedure}
-Looking at the map of the sites that were actually collected, there were several for which it is not precisely clear what offset procedure was actually used when a given grid site was not accessible. In future, it would probably make sense to add more specific offsetting instructions, and add to the form a bit more structured explanation of what was actually done. Rather than just a comment field, a field in the survey form specifically asking for a description of the offset procedure used could be implemented.
+Looking at the map of the sites that were actually collected, there were several for which it is not precisely clear what offset procedure was actually used when a given grid site was not accessible. While it is clear where the samples were actually collected---in all cases coordinates were taken for the actual site of colletcion---it's not necessarily clear how the team arrived at the offset location. In future, it would probably make sense to add more specific offsetting instructions, and add to the form a bit more structured explanation of what was actually done. Rather than just a comment field, a field in the survey form specifically asking for a description of the offset procedure used could be implemented.
 
 \subsection{Sieving and Data Entry}
 
@@ -217,7 +223,7 @@ In fact, 18 precise measurements (9 top and 9 bottom portions) are needed for a 
 
 This doesn't even take into account the 20-odd additional measurements per site, including the initial total masses of the top and bottom samples,and the empty sieve masses (these were much easier to get right as they are very consistent, but there were still a few errors in these measurements in the dataset prior to rework).
 
-At the end of the first round of measurements, over seventy sites (more than 10\$ of the total) had larger than 2\% discrepancies between the initial sample mass and the sum of the fractions, and were therefore invalid. In a few cases we were able to trace the specific error by comparing the two places the data were recorded (a Google Sheet and an ODK form), but we were forced to completely redo seventy sites.
+At the end of the first round of measurements, over seventy sites (more than 10\% of the total) had larger than 2\% discrepancies between the initial sample mass and the sum of the fractions, and were therefore invalid. In a few cases we were able to trace the specific error by comparing the two places the data were recorded (a Google Sheet and an ODK form), but we were forced to completely redo seventy sites.
 
 We advise anyone doing similar projects to implement rigorous quantitative quality checks very early on. We certainly wish that we had done so. During our rework phase in February of 2019, we successfully migitated this by:
 
@@ -225,7 +231,7 @@ We advise anyone doing similar projects to implement rigorous quantitative quali
   \item Simplyfying our data entry process (eliminating the Google Sheet data entry and using ODK Collect exclusively),
   \item Adding extra checks as calculations/notes in the ODK form to flag any discrepancies such as negative masses or discrepancies in sums immediately,
   \item Having a full-team meeting at the end of each analysis day with a supervisor--who was not part of the actual sieving team---to pull all of the data from the server and view it in a spreadsheet and map looking for discrepancies, and
-  \item Retaining the sieved soil until after the day's results were reviewed, as well as collecting larger samples in the field in order to have backup samples in case of loss/error.
+  \item Retaining the sieved sediment until after the day's results were reviewed, as well as collecting larger samples in the field in order to have backup samples in case of loss/error.
 \end{itemize}
 
   
@@ -233,21 +239,19 @@ We advise anyone doing similar projects to implement rigorous quantitative quali
 As the team felt that the field work would be the most difficult part (and certainly it was the larger consumer of time and resources), we focused on it, and failed to become alarmed when the analysis (sieving) work fell behind. This contributed to there being a substantial backlog of sieving to be done at the end of the field collection, but also contributed to our not discovering the high proportion of discrepancies until long after the field work was complete. Had we been sieving as quickly as we'd been collecting, and creating interim compiled datasets from the outset, we'd have avoided most of the rework.
 
 \subsubsection{Inadequate backup of samples}
-We did not build backup into our analysis; we discarded all of the soil immediately after sieving and measurement, and only collected enough for a single round of sieving at each site. During the rework phase in February of 2019, we built in two redundancies:
+We did not build backup into our analysis; we discarded all of the sediment immediately after sieving and measurement, and only collected enough for a single round of sieving at each site. During the rework phase in February of 2019, we built in two redundancies:
 
 \begin{itemize}
-  \item We collected 1kg of soil for each sample (2kg including top and bottom) in order to have enough left for re-analysis if anything went wrong, and
-  \item We did not discard the soil after sieving until both samples for the entire site were confirmed correct at the end of each day with a project supervisor.
+  \item We collected 1kg of sediment for each sample (2kg including top and bottom) in order to have enough left for re-analysis if anything went wrong, and
+  \item We did not discard the sediment after sieving until both samples for the entire site were confirmed correct at the end of each day with a project supervisor.
 \end{itemize}
 
 We heartily recommend both measures to anyone contemplating a similar project.
 
 \subsubsection{Data entry system design}
-It's critical to design the tools really, really carefully. We fell down a bit on data entry, in part because we didn't invest enough in making sure the system was robust and simple.
+It's critical to design the tools carefully. We encountered problems in data entry, in part because we didn't invest enough in making sure the system was robust and simple.
 
-We began using a Google Sheet template. This template contained data entry cells for the team to enter measurements, and formulas to calculate results such as soil retained (mass of sieve + soil - mass of empty sieve). Conditional formatting was used to highlight errors such as negative masses (indicating measurement problems) or discrepancies above 2\% between the initial mass of a given sample and the sum of its fractions. We expected the teams to duplicate a template tab in the spreadsheet for each sample site, resulting in a spreadsheet with hundreds of tabs full of data that would later be consolidated.
-
-This was problematic for a number of reasons.
+We began using a Google Sheet template. This template contained data entry cells for the team to enter measurements, and formulas to calculate results such as sediment retained (mass of sieve + sediment - mass of empty sieve). Conditional formatting was used to highlight errors such as negative masses (indicating measurement problems) or discrepancies above 2\% between the initial mass of a given sample and the sum of its fractions. We expected the teams to duplicate a template tab in the spreadsheet for each sample site, resulting in a spreadsheet with hundreds of tabs full of data that would later be consolidated. This was problematic for a number of reasons.
 
 \begin{itemize}
   \item The formulas and conditional formatting were difficult to protect from accidental modification.
@@ -257,16 +261,18 @@ This was problematic for a number of reasons.
   \item Google Sheets are vulnerable to multiple editor errors. More than one person can access a sheet simultaneously, and it's relatively easy to find oneself in the wrong sheet, or to make a mistaken edit with an unintentional keystroke. Even more terrifying is the possibility of data deletion, which---again in contrast to a submission-based system such as Google Forms or ODK---can be done accidentally. 
 \end{itemize}
 
-We considered several options for this. Within the Google ecosystem, the Google Forms platform allows for the entry of multiple data points which aggregate to a single spreadsheet. This would probably have been a better option than using multiple tabs on a Google Sheet. However, since the team was already familiar with OpenDataKit from field work, and the ODK facilities for implementing real-time calculations and error warnings are quite robust, we chose to use ODK.
+We considered several options for this. The Google Forms platform allows for the entry of multiple data points which aggregate to a single spreadsheet. This would probably have been a better option. However, since the team was already familiar with OpenDataKit from field work, and the ODK facilities for implementing real-time calculations and error warnings are quite robust, we chose to use ODK.
 
-We made the decision to continue using both the Google Sheet as well as ODK. This, in retrospect, was probably a mistake. Using both platforms simultaneously simply resulted in more errors accumulating---we would almost certainly have been better off using only one method and being rigorously consistent with it. The team tended to enter into one platform and then copy into the other, which instead of creating redundancy just created more data entry errors.
+We made the decision to continue using both the Google Sheet as well as ODK. This, in retrospect, was probably a mistake. Using both platforms simultaneously simply resulted in more errors accumulating---we would almost certainly have been better off using only one method and being rigorously consistent with it. The team tended to enter into one platform and then copy into the other, which simplycreated more data entry errors.
 
 During our rework phase, we used only the ODK platform. We ensured data backups by performing daily end-of-day data downloads---which also served as quality control points---and stored the results on local devices. This worked very well, and we recommend this procedure (and will ourselves use it in the future).
 
+Another possibility, if data entry on a computer rather than mobile device is preferred, would be to use a desktop database management package, which allows the creation of data entry forms.
+
 \subsubsection{Miscellaneous points for improvement}
 \begin{itemize}
-  \item The samples were supposed to be shaken in the sieves for three minutes. This was initially done without a stopwatch, which upon observation resulted in quite a lot of variation in the shaking time (sometimes more and sometimes less than the requisite three minutes). We corrected this after a few days, but we can't be certain that this did not affect the quality of a few early samples (though it seems unlikely as the soil fractions were all visually quite well separated).
-  \item The samples were initially being dried on styrofoam boards or plastic tarps. We saw that this process leaves residue on the drying area, which visibly tends to be fine particles (possibly skewing the measurements by reducing the amount of fines per sample). Furthermore, the process of transferring the soil from the bags to the drying area and back seems to result in a small amount of winnowing (we saw a small amount of dust flying off as the transfers took place). The team procured some plastic trays for drying so that each sample could be transferred without winnowing loss or leaving fines behind.
+  \item The samples were supposed to be shaken in the sieves for three minutes. This was initially done without a stopwatch, which upon observation resulted in quite a lot of variation in the shaking time (sometimes more and sometimes less than the requisite three minutes). We corrected this after a few days, but we can't be certain that this did not affect the quality of a few early samples (though it seems unlikely as the sediment fractions were all visually quite well separated).
+  \item The samples were initially being dried on styrofoam boards or plastic tarps. This left residue on the drying area, which tends to be fine particles that are lost to the measurements. Furthermore, the process of transferring the sediment from the bags to the drying area and back seems to result in a small amount of winnowing (dust flying off as the transfers took place). The team procured some plastic trays for drying so that each sample could be transferred without winnowing loss or leaving fines behind.
 \end{itemize}
 
 \end{document}
